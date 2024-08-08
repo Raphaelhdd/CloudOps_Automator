@@ -17,6 +17,37 @@ Before using CloudOps Automator, ensure you have the following:
 - **gcloud** command-line tool configured with access to your GCP project.
 - SSH keys set up for seamless connections to your instances.
 
+##Install SDK Google Cloud
+Download SDK
+```bash
+curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-367.0.0-linux-x86_64.tar.gz
+```
+
+Extract archive
+```bash
+tar -xf google-cloud-sdk-367.0.0-linux-x86_64.tar.gz
+```
+
+Install SDK
+```bash
+./google-cloud-sdk/install.sh
+```
+
+Init SDK
+```bash
+./google-cloud-sdk/bin/gcloud init
+```
+
+
+##Authentification and configuration
+Connect to you account google cloud
+```bash
+gcloud auth login
+```
+
+Copy the link they will give you to your account and past the key.
+
+
 ## Setup
 
 1. **Clone the repository**:
