@@ -1,13 +1,14 @@
 #!/bin/bash
 
 # Google Cloud Project ID
-PROJECT_ID="alien-oarlock-430717-f4"
+PROJECT_ID="your_project_id"
 
 # List of instances in the format "INSTANCE_NAME ZONE"
+# You can have it from the command gcloud compute instances list
 instances=(
-  "patrick-1 us-central1-b"
-  "patrick-3 us-central1-b"
-  "patrick-2 europe-west9-c"
+      "INSTANCE_NAME ZONE"
+      "INSTANCE_NAME ZONE"
+      "INSTANCE_NAME ZONE"
 )
 
 # Reset each instance and run the Bash script

@@ -1,4 +1,4 @@
-**# CloudOps Automator
+# CloudOps Automator
 
 **CloudOps Automator** is a powerful tool designed to automate the management and operational tasks of Google Cloud Platform (GCP) virtual machines (VMs). This project streamlines the process of resetting VMs and running custom scripts, reducing the need for manual intervention and ensuring consistent operations across multiple instances.
 
@@ -69,4 +69,11 @@ Before using CloudOps Automator, ensure you have the following:
     gcloud config list
     ```
 
-Feel free to adjust the details according to your specific needs or preferences.
+## Be Careful
+
+**Do not reset the VM that is currently running the script**. If you reset the VM running the script, it will terminate the script execution, and you might lose progress or control over the operation.
+
+Instead, you should:
+- **Test the script** on a non-critical VM before deploying it in a production environment.
+- **Schedule the reset** of your VM from another VM or through an external scheduling service to ensure your script remains uninterrupted.
+
